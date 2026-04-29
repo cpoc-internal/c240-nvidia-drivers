@@ -33,6 +33,7 @@ export PATH=$CUDA_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 nvcc --version
 
+
 sudo apt install docker.io -y
 sudo apt-get update
 sudo apt-get install -y nvidia-container-toolkit
@@ -54,4 +55,8 @@ sudo apt install lldpd -y
 sudo systemctl start lldpd
 sudo systemctl enable lldpd
 sudo systemctl status lldpd
+
+sudo nvidia-smi -pm 1
+sudo modprobe nvidia-uvm
+sudo modprobe nvidia-modeset
 

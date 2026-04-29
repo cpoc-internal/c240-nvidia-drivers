@@ -54,7 +54,7 @@ docker run -d --gpus all \
 sudo apt install lldpd -y
 sudo systemctl start lldpd
 sudo systemctl enable lldpd
-sudo systemctl status lldpd
+#sudo systemctl status lldpd
 
 sudo nvidia-smi -pm 1
 sudo modprobe nvidia-uvm
